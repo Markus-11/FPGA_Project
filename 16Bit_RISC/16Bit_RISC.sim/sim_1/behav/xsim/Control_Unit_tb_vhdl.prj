@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../FPGA_Abgabe.srcs/sources_1/new/Control_Unit.vhd" \
-"../../../../FPGA_Abgabe.srcs/sim_1/new/Control_Unit_tb.vhd" \
-
-# Do not sort compile order
-nosort

@@ -1,0 +1,10 @@
+--Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------
+--Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+--Date        : Sun Dec  1 15:36:32 2024
+--Host        : JansMaschine running 64-bit major release  (build 9200)
+--Command     : generate_target design_1.bd
+--Design      : design_1
+--Purpose     : IP block netlist
+----------------------------------------------------------------------------------

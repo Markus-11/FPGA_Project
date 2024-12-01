@@ -1,0 +1,18 @@
+0.7
+2020.2
+Sep  5 2024
+15:23:16
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/ALU_tb.vhd,1733093533,vhdl,,,,alu_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/CPU_TB.vhd,1733096594,vhdl,,,,cpu,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/Decoder_tb.vhd,1733092051,vhdl,,,,decoder_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/ProgramCounter.tb,1733090644,vhdl,,,,programcounter_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/RAM_tb.vhd,1733094888,vhdl,,,,ram_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/ROM_TB.vhd,1733091236,vhdl,,,,rom_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sim_1/new/RegisterFile_tb.vhd,1733095910,vhdl,,,,registerfile_tb,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd,1733089559,vhdl,,,,control_unit_pipe;control_unit_stm,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd,1733093287,vhdl,,,,decoder,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ALU.vhd,1733093655,vhdl,,,,alu,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RAM.vhd,1733094125,vhdl,,,,ram,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ROM.vhd,1733091117,vhdl,,,,rom,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd,1733087528,vhdl,,,,registerfile,,,,,,,,
+C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/pc.vhd,1733087041,vhdl,,,,programcounter,,,,,,,,

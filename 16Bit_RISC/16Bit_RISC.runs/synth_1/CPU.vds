@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sun Dec  1 22:46:19 2024
+# Process ID: 6972
+# Current directory: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.runs/synth_1
+# Command line: vivado.exe -log CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+# Log file: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.runs/synth_1/CPU.vds
+# Journal file: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.runs/synth_1\vivado.jou
+# Running On        :JansMaschine
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency     :2918 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :34078 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36225 MB
+# Available Virtual :14054 MB
+#-----------------------------------------------------------
+source CPU.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 520.137 ; gain = 135.902
+Command: read_checkpoint -auto_incremental -incremental C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/utils_1/imports/synth_1/CPU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/utils_1/imports/synth_1/CPU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU -part xc7s25csga324-1Q
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga324-1Q
+INFO: [Device 21-9227] Part: xc7s25csga324-1Q does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17296
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1355.422 ; gain = 448.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:8]
+INFO: [Synth 8-3491] module 'ProgramCounter' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/pc.vhd:5' bound to instance 'cpu_program_counter' of component 'ProgramCounter' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/pc.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/pc.vhd:14]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:5' bound to instance 'cpu_registerfile' of component 'RegisterFile' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:26]
+WARNING: [Synth 8-614] signal 'reset_in' is read in the process but is not in the sensitivity list [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:26]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd:4' bound to instance 'cpu_decoder' of component 'Decoder' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd:18]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ALU.vhd:5' bound to instance 'cpu_alu' of component 'ALU' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ALU.vhd:17]
+WARNING: [Synth 8-614] signal 'reset_in' is read in the process but is not in the sensitivity list [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ALU.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ALU.vhd:17]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RAM.vhd:5' bound to instance 'cpu_ram' of component 'RAM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RAM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RAM.vhd:17]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ROM.vhd:5' bound to instance 'cpu_rom' of component 'ROM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ROM.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ROM.vhd:14]
+INFO: [Synth 8-3491] module 'Control_Unit_STM' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:4' bound to instance 'cpu_control_unit_stm' of component 'Control_Unit_STM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit_STM' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit_STM' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:16]
+INFO: [Synth 8-3491] module 'Control_Unit_PIPE' declared at 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:54' bound to instance 'cpu_control_unit_pipeline' of component 'Control_Unit_PIPE' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit_PIPE' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:97]
+WARNING: [Synth 8-614] signal 'toggle2' is read in the process but is not in the sensitivity list [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit_PIPE' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:97]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:307]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (0#1) [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:8]
+WARNING: [Synth 8-6014] Unused sequential element ROM_enable_m_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/pc.vhd:31]
+WARNING: [Synth 8-6014] Unused sequential element enable_ALU_m_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:39]
+WARNING: [Synth 8-6014] Unused sequential element RAM_enable_s_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element DEC_buffer_enable_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd:34]
+WARNING: [Synth 8-6014] Unused sequential element opcode_temp_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Decoder.vhd:25]
+WARNING: [Synth 8-6014] Unused sequential element REG_enable_l_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RAM.vhd:27]
+WARNING: [Synth 8-6014] Unused sequential element ROM_buffer_enable_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/ROM.vhd:35]
+WARNING: [Synth 8-3848] Net reset_out in module/entity Control_Unit_STM does not have driver. [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:7]
+WARNING: [Synth 8-6014] Unused sequential element enable_PC_m_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:144]
+WARNING: [Synth 8-6014] Unused sequential element enable_DEC_m_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element toggle2_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element enable_RAM_l_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element enable_RAM_l_out_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element execute_reg_1_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:243]
+WARNING: [Synth 8-6014] Unused sequential element writeback_reg_1_reg was removed.  [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:264]
+WARNING: [Synth 8-3848] Net reset_out in module/entity Control_Unit_PIPE does not have driver. [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:58]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-193.4 with 1st driver pin 'cpu_control_unit_stm/reset_out' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:193]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-193.4 with 2nd driver pin 'GND' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:193]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-193.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:193]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-199.4 with 1st driver pin 'cpu_control_unit_stm/reset_out' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-199.4 with 2nd driver pin 'GND' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-199.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-217.4 with 1st driver pin 'cpu_control_unit_stm/reset_out' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:217]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-217.4 with 2nd driver pin 'GND' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:217]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-217.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:217]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-229.4 with 1st driver pin 'cpu_control_unit_stm/reset_out' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:229]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-229.4 with 2nd driver pin 'GND' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:229]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-229.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:229]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-238.4 with 1st driver pin 'cpu_control_unit_stm/reset_out' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:238]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-238.4 with 2nd driver pin 'GND' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:238]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd-238.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/CPU.vhd:238]
+WARNING: [Synth 8-7129] Port reset_out in module Control_Unit_PIPE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable_fet_in in module Control_Unit_PIPE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_out in module Control_Unit_STM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_in in module RAM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_in in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset_in in module Decoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1469.602 ; gain = 562.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1469.602 ; gain = 562.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1469.602 ; gain = 562.641
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1469.602 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/constrs_1/new/Settings_1.xdc]
+Finished Parsing XDC File [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/constrs_1/new/Settings_1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1523.574 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga324-1Q
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Control_Unit_STM'
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[0]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[1]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[2]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[3]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[4]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[5]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[6]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[7]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[8]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[9]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[10]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[11]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[12]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[13]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[14]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[15]' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/RegFile.vhd:34]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_fet_reg' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:35]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   fetch |                             0001 |                               00
+                  decode |                             0010 |                               01
+                 execute |                             0100 |                               10
+               writeback |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Control_Unit_STM'
+WARNING: [Synth 8-327] inferring latch for variable 'enable_dec_reg' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_exe_reg' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'enable_wb_reg' [C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.srcs/sources_1/new/Control_Unit.vhd:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 15    
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 17    
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               4K Bit	(256 X 16 bit)          RAMs := 1     
++---Muxes : 
+	  13 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	  13 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 19    
+	  13 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[0][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[1][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[2][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[3][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[4][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][12]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][11]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][10]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][9]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][8]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][7]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][6]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][5]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][4]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][3]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][2]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][1]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[5][0]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[6][15]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[6][14]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[6][13]__1) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (cpu_registerfile/reg_file_reg[6][12]__1) is unused and will be removed from module CPU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 285 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1523.574 ; gain = 562.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1523.574 ; gain = 616.613
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1523.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 14f2f8d6
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 148 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1523.574 ; gain = 994.281
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.runs/synth_1/CPU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 22:46:47 2024...

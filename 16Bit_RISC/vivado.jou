@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Fri Nov 29 21:21:26 2024
+# Process ID: 14820
+# Current directory: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12480 C:\Users\jankr\Documents\DHBW\FPGA\16_Bit_Risc\FPGA_Project\16Bit_RISC\16Bit_RISC.xpr
+# Log file: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/vivado.log
+# Journal file: C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC\vivado.jou
+# Running On        :JansMaschine
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i7-13700H
+# CPU Frequency     :2918 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :34078 MB
+# Swap memory       :2147 MB
+# Total Virtual     :36225 MB
+# Available Virtual :16342 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jankr/Documents/DHBW/FPGA/16_Bit_Risc/FPGA_Project/16Bit_RISC/16Bit_RISC.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ProgramCounter_tb.tcl
+run 10 ms
+close_sim
+launch_simulation
+source ProgramCounter_tb.tcl
+close_sim
+launch_simulation
+source ProgramCounter_tb.tcl
+run 10 ms
+close_sim
